@@ -21,7 +21,7 @@
                     $scope.GetMoviesData = function() {
                         try {
                             $http({
-                                url: 'http://www.omdbapi.com/?apikey=44ee233a&s='+$scope.Search,
+                                url: 'https://www.omdbapi.com/?apikey=44ee233a&s='+$scope.Search,
                                 method: "GET",
                             }).then(
                                 function(payload) {
@@ -77,7 +77,7 @@
         </a>
     </div>
   </div>
-<script src="http://cdn.asimplify.com/lightboxgallery/js/lightboxjs-custom.js"></script>
+<script src="https://cdn.asimplify.com/lightboxgallery/js/lightboxjs-custom.js"></script>
   <script type="text/javascript">
   jQuery(function($) {
     $(document).on('click', '.lightboxgallery-gallery-item', function(event) {
